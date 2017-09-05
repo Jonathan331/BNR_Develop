@@ -27,7 +27,7 @@
     
     CGRect firstFrame = self.window.bounds;
     BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
-    [self.window addSubview:firstView];
+    [vc.view addSubview:firstView];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
