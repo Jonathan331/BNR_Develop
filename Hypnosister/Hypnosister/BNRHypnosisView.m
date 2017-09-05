@@ -43,6 +43,7 @@
     [self.circleColor setStroke];
     [path stroke];
     
+//    第四章高级练习，绘制颜色渐变的三角形
 //    UIBezierPath *myPath = [[UIBezierPath alloc] init];
 //    CGPoint topPoint = CGPointMake(center.x, 80);
 //    CGPoint leftPoint = CGPointMake(center.x - 120, 600);
@@ -72,11 +73,12 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"%@ was touched",self);
-    float red = arc4random() % 100 / 100;
-    float green = arc4random() % 100 / 100;
-    float blue = arc4random() % 100 / 100;
+    float red = arc4random() % 100 / 100.0;
+    float green = arc4random() % 100 / 100.0;
+    float blue = arc4random() % 100 / 100.0;
     UIColor *randomColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
-    self.circleColor = randomColor;;
+    self.circleColor = randomColor;
+    [self setNeedsDisplay];
 }
 
 @end
