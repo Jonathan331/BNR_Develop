@@ -20,8 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    NSBundle *appBundle = [NSBundle mainBundle];
-    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[hvc,rvc];

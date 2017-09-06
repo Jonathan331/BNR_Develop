@@ -21,6 +21,12 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"BNRHypnosisViewController loaded its view.");
+}
+
 - (void)loadView
 {
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] init];

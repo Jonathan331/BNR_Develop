@@ -26,6 +26,12 @@
     return  self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"BNRReminderViewController loaded its view.");
+}
+
 - (IBAction)addReminder:(id)sender
 {
     NSDate *date = self.datePicker.date;
