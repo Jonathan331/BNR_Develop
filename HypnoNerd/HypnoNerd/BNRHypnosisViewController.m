@@ -11,6 +11,16 @@
 
 @implementation BNRHypnosisViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBarItem.title = @"Hypnotize";
+        self.tabBarItem.image = [UIImage imageNamed:@"Hypno.png"];
+    }
+    return self;
+}
+
 - (void)loadView
 {
     BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] init];

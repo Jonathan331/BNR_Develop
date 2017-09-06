@@ -22,9 +22,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     NSBundle *appBundle = [NSBundle mainBundle];
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
-    self.window.rootViewController = rvc;
-//    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
-//    self.window.rootViewController = hvc;
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc,rvc];
+    self.window.rootViewController = tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
