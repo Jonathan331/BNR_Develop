@@ -42,32 +42,6 @@
     path.lineWidth = 10;
     [self.circleColor setStroke];
     [path stroke];
-    
-//    第四章高级练习，绘制颜色渐变的三角形
-//    UIBezierPath *myPath = [[UIBezierPath alloc] init];
-//    CGPoint topPoint = CGPointMake(center.x, 80);
-//    CGPoint leftPoint = CGPointMake(center.x - 120, 600);
-//    CGPoint rightPoitn = CGPointMake(center.x + 120, 600);
-//    [myPath moveToPoint:topPoint];
-//    [myPath addLineToPoint:leftPoint];
-//    [myPath addLineToPoint:rightPoitn];
-//    [myPath closePath];
-//
-//    CGContextRef content = UIGraphicsGetCurrentContext();
-//    CGContextSaveGState(content); //保存绘图状态
-//    [myPath addClip];
-//
-//    CGFloat location[2] = {0.0,1.0};
-//    CGFloat components[8] = {0.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0};
-//    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
-//    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, location, 2);
-//    CGPoint startPoint = CGPointMake(100, 50);
-//    CGPoint endPoint = CGPointMake(100, 500);
-//    CGContextDrawLinearGradient(content, gradient, startPoint, endPoint, 0);
-//    CGGradientRelease(gradient);
-//    CGColorSpaceRelease(colorspace);
-//
-//    CGContextRestoreGState(content); //恢复绘图状态
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
