@@ -9,6 +9,10 @@
 #import "BNRHypnosisViewController.h"
 #import "BNRHypnosisView.h"
 
+@interface BNRHypnosisViewController()<UITextFieldDelegate>
+
+@end
+
 @implementation BNRHypnosisViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -58,7 +62,55 @@
     
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(40, 70, 295, 30)];
     textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.placeholder = @"Hypnotize me";
+    textField.returnKeyType = UIReturnKeyDone;
+    textField.delegate = self;
     [backgroundView addSubview:textField];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self drawHypnoticMessage:textField.text];
+    textField.text = @"";
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)drawHypnoticMessage:(NSString *)message
+{
+    for (int i = 0; i < 20; i++) {
+        UILabel *label = [[UILabel alloc] init];
+        
+        label.backgroundColor = [UIColor clearColor];
+        label.textColor = [UIColor whiteColor];
+        label.text = message;
+        
+        [label sizeToFit];
+        
+        int width = (int)(self.view.bounds.size.width - label.bounds.size.width);
+        int x = arc4random() % width;
+        
+        int height = (int)(self.view.bounds.size.height - label.bounds.size.height);
+        int y = arc4random() % height;
+        
+        CGRect frame = label.frame;
+        frame.origin = CGPointMake(x, y);
+        label.frame = frame;
+        
+        [self.view addSubview:label];
+        
+        //视差效果
+        UIInterpolatingMotionEffect *motionEffect;
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        [label addMotionEffect:motionEffect];
+        
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        [label addMotionEffect:motionEffect];
+    }
 }
 
 @end
