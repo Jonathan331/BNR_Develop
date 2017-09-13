@@ -82,8 +82,9 @@
         UILabel *label = [[UILabel alloc] init];
         
         label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor whiteColor];
+        label.textColor = [UIColor blackColor];
         label.text = message;
+        label.font = [UIFont systemFontOfSize:(arc4random()%20 + 10)];
         
         [label sizeToFit];
         
