@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB4A32B61F719AA4008BD129 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4A32B51F719AA4008BD129 /* HeaderView.xib */; };
 		ABE89FF71F696F6B00C73776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE89FF61F696F6B00C73776 /* AppDelegate.m */; };
 		ABE89FFD1F696F6B00C73776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE89FFB1F696F6B00C73776 /* Main.storyboard */; };
 		ABE89FFF1F696F6B00C73776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE89FFE1F696F6B00C73776 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB4A32B51F719AA4008BD129 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		ABE89FF21F696F6B00C73776 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE89FF51F696F6B00C73776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABE89FF61F696F6B00C73776 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				ABE89FF61F696F6B00C73776 /* AppDelegate.m */,
 				ABE8A00B1F696FE600C73776 /* BNRItemsViewController.h */,
 				ABE8A00C1F696FE600C73776 /* BNRItemsViewController.m */,
+				AB4A32B51F719AA4008BD129 /* HeaderView.xib */,
 				ABE8A00F1F6973F700C73776 /* BNRItem.h */,
 				ABE8A00E1F6973F600C73776 /* BNRItem.m */,
 				ABE8A0111F6974B600C73776 /* BNRItemStore.h */,
@@ -142,6 +145,7 @@
 				ABE8A0021F696F6B00C73776 /* LaunchScreen.storyboard in Resources */,
 				ABE89FFF1F696F6B00C73776 /* Assets.xcassets in Resources */,
 				ABE89FFD1F696F6B00C73776 /* Main.storyboard in Resources */,
+				AB4A32B61F719AA4008BD129 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
