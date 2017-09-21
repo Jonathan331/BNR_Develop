@@ -115,4 +115,29 @@
     return @"Remove";
 }
 
+- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.row % 5;
+}
+
+//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSLog(@"will display cell %@",cell.textLabel.text);
+//}
+//
+//- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSLog(@"did end display cell %@",cell.textLabel.text);
+//}
+
+//- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    UITableViewRowAction *aAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+//    }];
+//    UITableViewRowAction *bAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"取消关注" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+//    }];
+//    UITableViewRowAction *cAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"哈哈" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+//    }];
+//    return @[aAction,bAction,cAction];
+//}
+
 @end
