@@ -76,6 +76,16 @@
     return [[BNRItemStore sharedStore] allItems].count + 1;
 }
 
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 44;
+//}
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return UITableViewAutomaticDimension;
+//}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
@@ -120,11 +130,32 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    BNRItem *selectedItem = [[[BNRItemStore sharedStore] allItems] objectAtIndex:indexPath.row];
-    BNRDetailViewController *detailVC = [[BNRDetailViewController alloc] init];
-    detailVC.item = selectedItem;
-    [self.navigationController pushViewController:detailVC animated:YES];
+//    BNRItem *selectedItem = [[[BNRItemStore sharedStore] allItems] objectAtIndex:indexPath.row];
+//    BNRDetailViewController *detailVC = [[BNRDetailViewController alloc] init];
+//    detailVC.item = selectedItem;
+//    [self.navigationController pushViewController:detailVC animated:YES];
 }
+
+//- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSLog(@"did deselect the row %ld",indexPath.row); //从一个cell切换到另一个cell的时候会被执行，indexPath为前一个cell的indexPath
+//}
+
+//- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return YES; //如果为NO，则对于的cell不能被高亮（即无法被选中），下面两个代理方法也不会被执行
+//}
+//
+//- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSLog(@"hightlight the row");
+//}
+//
+//- (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSLog(@"unhightlight the row");
+//}
+
 //- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    return @"Remove";
@@ -132,7 +163,7 @@
 
 //- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
 //{
-//    return indexPath.row % 5;
+//    return indexPath.row % 5; //Deprecated
 //}
 
 //- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
