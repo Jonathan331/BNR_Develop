@@ -122,6 +122,11 @@
 //    return YES;
 //}
 
+//- (nullable NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return [NSIndexPath indexPathForRow:1 inSection:0]; //可以将原本的点击事件更改为指定row的点击
+//}
+
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
 {
     [[BNRItemStore sharedStore] moveItemAtIndex:sourceIndexPath.row toIndex:destinationIndexPath.row];
@@ -130,10 +135,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    BNRItem *selectedItem = [[[BNRItemStore sharedStore] allItems] objectAtIndex:indexPath.row];
-//    BNRDetailViewController *detailVC = [[BNRDetailViewController alloc] init];
-//    detailVC.item = selectedItem;
-//    [self.navigationController pushViewController:detailVC animated:YES];
+    BNRItem *selectedItem = [[[BNRItemStore sharedStore] allItems] objectAtIndex:indexPath.row];
+    BNRDetailViewController *detailVC = [[BNRDetailViewController alloc] init];
+    detailVC.item = selectedItem;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 //- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -148,12 +153,12 @@
 //
 //- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    NSLog(@"hightlight the row");
+//    NSLog(@"hightlight the row %ld",indexPath.row);
 //}
 //
 //- (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    NSLog(@"unhightlight the row");
+//    NSLog(@"unhightlight the row %ld",indexPath.row);
 //}
 
 //- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
