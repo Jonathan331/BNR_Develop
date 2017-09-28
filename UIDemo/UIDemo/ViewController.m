@@ -41,6 +41,11 @@ typedef void(^ExecuteBlock)(void);
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowInSection:(NSInteger)section
+{
+    return 44;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.sourceArray.count;

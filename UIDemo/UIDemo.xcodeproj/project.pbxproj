@@ -14,7 +14,6 @@
 		ABF0D14F1F7B8E7E00AB547D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D14D1F7B8E7E00AB547D /* LaunchScreen.storyboard */; };
 		ABF0D1521F7B8E7E00AB547D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0D1511F7B8E7E00AB547D /* main.m */; };
 		ABF0D15C1F7B965300AB547D /* RedDotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0D15B1F7B965300AB547D /* RedDotViewController.m */; };
-		ABF0D1621F7BA87E00AB547D /* NSString+FixMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0D1611F7BA87E00AB547D /* NSString+FixMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +29,6 @@
 		ABF0D1511F7B8E7E00AB547D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABF0D15A1F7B965300AB547D /* RedDotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedDotViewController.h; sourceTree = "<group>"; };
 		ABF0D15B1F7B965300AB547D /* RedDotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedDotViewController.m; sourceTree = "<group>"; };
-		ABF0D1601F7BA87E00AB547D /* NSString+FixMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FixMethod.h"; sourceTree = "<group>"; };
-		ABF0D1611F7BA87E00AB547D /* NSString+FixMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FixMethod.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +67,6 @@
 				ABF0D1461F7B8E7E00AB547D /* ViewController.m */,
 				ABF0D15A1F7B965300AB547D /* RedDotViewController.h */,
 				ABF0D15B1F7B965300AB547D /* RedDotViewController.m */,
-				ABF0D1601F7BA87E00AB547D /* NSString+FixMethod.h */,
-				ABF0D1611F7BA87E00AB547D /* NSString+FixMethod.m */,
 				ABF0D1481F7B8E7E00AB547D /* Main.storyboard */,
 				ABF0D14B1F7B8E7E00AB547D /* Assets.xcassets */,
 				ABF0D14D1F7B8E7E00AB547D /* LaunchScreen.storyboard */,
@@ -155,7 +150,6 @@
 				ABF0D1471F7B8E7E00AB547D /* ViewController.m in Sources */,
 				ABF0D1521F7B8E7E00AB547D /* main.m in Sources */,
 				ABF0D15C1F7B965300AB547D /* RedDotViewController.m in Sources */,
-				ABF0D1621F7BA87E00AB547D /* NSString+FixMethod.m in Sources */,
 				ABF0D1441F7B8E7E00AB547D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
