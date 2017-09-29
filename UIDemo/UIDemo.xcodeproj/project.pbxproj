@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB48B2361F7DE75E00DF7E3C /* CellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB48B2351F7DE75E00DF7E3C /* CellViewController.m */; };
 		ABF0D1441F7B8E7E00AB547D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0D1431F7B8E7E00AB547D /* AppDelegate.m */; };
 		ABF0D1471F7B8E7E00AB547D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0D1461F7B8E7E00AB547D /* ViewController.m */; };
 		ABF0D14A1F7B8E7E00AB547D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF0D1481F7B8E7E00AB547D /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB48B2341F7DE75E00DF7E3C /* CellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellViewController.h; sourceTree = "<group>"; };
+		AB48B2351F7DE75E00DF7E3C /* CellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellViewController.m; sourceTree = "<group>"; };
 		ABF0D13F1F7B8E7E00AB547D /* UIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF0D1421F7B8E7E00AB547D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABF0D1431F7B8E7E00AB547D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				ABF0D1461F7B8E7E00AB547D /* ViewController.m */,
 				ABF0D15A1F7B965300AB547D /* RedDotViewController.h */,
 				ABF0D15B1F7B965300AB547D /* RedDotViewController.m */,
+				AB48B2341F7DE75E00DF7E3C /* CellViewController.h */,
+				AB48B2351F7DE75E00DF7E3C /* CellViewController.m */,
 				ABF0D1481F7B8E7E00AB547D /* Main.storyboard */,
 				ABF0D14B1F7B8E7E00AB547D /* Assets.xcassets */,
 				ABF0D14D1F7B8E7E00AB547D /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 				ABF0D1471F7B8E7E00AB547D /* ViewController.m in Sources */,
 				ABF0D1521F7B8E7E00AB547D /* main.m in Sources */,
 				ABF0D15C1F7B965300AB547D /* RedDotViewController.m in Sources */,
+				AB48B2361F7DE75E00DF7E3C /* CellViewController.m in Sources */,
 				ABF0D1441F7B8E7E00AB547D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
